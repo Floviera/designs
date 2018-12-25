@@ -1,6 +1,50 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
+      <title></title>
+      <meta name="description" content="chart created using amCharts live editor" />
+      
+      <!-- amCharts javascript sources -->
+      <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+      <script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+      <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+      
+  
+      <!-- amCharts javascript code -->
+      <script type="text/javascript">
+        AmCharts.makeChart("chartdiv",
+          {
+            "type": "pie",
+            "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+            "innerRadius": "40%",
+            "titleField": "category",
+            "valueField": "column-1",
+            "theme": "light",
+            "allLabels": [],
+            "balloon": {},
+            "legend": {
+              "enabled": true,
+              "align": "center",
+              "markerType": "circle"
+            },
+            "titles": [],
+            "dataProvider": [
+              {
+                "category": "Your Profit",
+                "column-1": "89.6"
+              },
+              {
+                "category": "Our Fee",
+                "column-1": "10"
+              },
+              {
+                "category": "Credit Card Fee",
+                "column-1": "0.4"
+              }
+            ]
+          }
+        );
+      </script>
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8" />
@@ -114,7 +158,7 @@
 
             <h3>
               Create your own rules, and give supporters as much access as you would like.
-              Get closer to supporters while giving them as much access as you would like.
+            
             </h3>
 
             <div class="home-content__btn-wrap">
@@ -208,12 +252,12 @@
           <!-- end about-desc__slide -->
 
           <div class="about-desc__slide">
-            <h3 class="item-title">Secure.</h3>
+            <h3 class="item-title">Profit.</h3>
 
             <p>
-              Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis
-              molestiae nemo est. Ut quis enim rerum quia assumenda repudiandae
-              non cumque qui. Amet repellat omnis ea aut cumque eos.
+              Unlike social media platforms that profit more than their content creators do, 
+              we do the opposite. Our prices are simple and crystal clear. 
+              Content creators make most of the profit while we take a credit card fee of 3.5%, and charge only $1 per member.
             </p>
           </div>
           <!-- end about-desc__slide -->
@@ -303,184 +347,8 @@
     <!-- end s-about-how -->
 
     <!-- features
-    ================================================== -->
-    <section id="features" class="s-features target-section">
-      <div class="row section-header has-bottom-sep" data-aos="fade-up">
-        <div class="col-full">
-          <h1 class="display-1">
-            Loaded With Features You Would Absolutely Love.
-          </h1>
-          <p class="lead">
-            Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae
-            nemo est. Ut quis enim rerum quia assumenda repudiandae molestiae
-            cumque qui. Amet repellat omnis ea.
-          </p>
-        </div>
-      </div>
-      <!-- end section-header -->
 
-      <div class="row features block-1-3 block-m-1-2">
-        <div class="col-block item-feature" data-aos="fade-up">
-          <div class="item-feature__icon"><i class="icon-upload"></i></div>
-          <div class="item-feature__text">
-            <h3 class="item-title">Cloud Based</h3>
-            <p>
-              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
-              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
-              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
-              voluptas ipsa in tempora esse soluta sint.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-block item-feature" data-aos="fade-up">
-          <div class="item-feature__icon">
-            <i class="icon-video-camera"></i>
-          </div>
-          <div class="item-feature__text">
-            <h3 class="item-title">Voice & Video</h3>
-            <p>
-              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
-              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
-              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
-              voluptas ipsa in tempora esse soluta sint.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-block item-feature" data-aos="fade-up">
-          <div class="item-feature__icon"><i class="icon-shield"></i></div>
-          <div class="item-feature__text">
-            <h3 class="item-title">Always Secure</h3>
-            <p>
-              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
-              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
-              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
-              voluptas ipsa in tempora esse soluta sint.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-block item-feature" data-aos="fade-up">
-          <div class="item-feature__icon"><i class="icon-lego-block"></i></div>
-          <div class="item-feature__text">
-            <h3 class="item-title">Play Games</h3>
-            <p>
-              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
-              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
-              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
-              voluptas ipsa in tempora esse soluta sint.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-block item-feature" data-aos="fade-up">
-          <div class="item-feature__icon"><i class="icon-chat"></i></div>
-          <div class="item-feature__text">
-            <h3 class="item-title">Group Chat</h3>
-            <p>
-              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
-              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
-              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
-              voluptas ipsa in tempora esse soluta sint.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-block item-feature" data-aos="fade-up">
-          <div class="item-feature__icon"><i class="icon-wallet"></i></div>
-          <div class="item-feature__text">
-            <h3 class="item-title">Payments</h3>
-            <p>
-              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
-              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
-              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
-              voluptas ipsa in tempora esse soluta sint.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- end features -->
-
-      <div class="testimonials-wrap" data-aos="fade-up">
-        <div class="row">
-          <div class="col-full testimonials-header">
-            <h2 class="display-2">Our Users Love Our App!</h2>
-          </div>
-        </div>
-
-        <div class="row testimonials">
-          <div class="col-full slick-slider testimonials__slider">
-            <div class="testimonials__slide">
-              <img
-                src="images/avatars/user-03.jpg"
-                alt="Author image"
-                class="testimonials__avatar"
-              />
-
-              <p>
-                Qui ipsam temporibus quisquam velMaiores eos cumque distinctio
-                nam accusantium ipsum. Laudantium quia consequatur molestias
-                delectus culpa facere hic dolores aperiam. Accusantium
-                praesentium corpori.
-              </p>
-
-              <div class="testimonials__author">
-                <span class="testimonials__name">Naruto Uzumaki</span>
-                <a href="#0" class="testimonials__link">@narutouzumaki</a>
-              </div>
-            </div>
-            <!-- end testimonials__slide -->
-
-            <div class="testimonials__slide">
-              <img
-                src="images/avatars/user-05.jpg"
-                alt="Author image"
-                class="testimonials__avatar"
-              />
-
-              <p>
-                Excepturi nam cupiditate culpa doloremque deleniti repellat.
-                Veniam quos repellat voluptas animi adipisci. Nisi eaque
-                consequatur. Quasi voluptas eius distinctio. Atque eos maxime.
-                Qui ipsam temporibus quisquam vel.
-              </p>
-
-              <div class="testimonials__author">
-                <span class="testimonials__name">Sasuke Uchiha</span>
-                <a href="#0" class="testimonials__link">@sasukeuchiha</a>
-              </div>
-            </div>
-            <!-- end testimonials__slide -->
-
-            <div class="testimonials__slide">
-              <img
-                src="images/avatars/user-01.jpg"
-                alt="Author image"
-                class="testimonials__avatar"
-              />
-
-              <p>
-                Repellat dignissimos libero. Qui sed at corrupti expedita
-                voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                Autem eaque officia cum exercitationem sunt voluptatum
-                accusamus. Quasi voluptas eius distinctio.
-              </p>
-
-              <div class="testimonials__author">
-                <span class="testimonials__name">Shikamaru Nara</span>
-                <a href="#0" class="testimonials__link">@shikamarunara</a>
-              </div>
-            </div>
-            <!-- end testimonials__slide -->
-          </div>
-          <!-- end testimonials__slider -->
-        </div>
-        <!-- end testimonials -->
-      </div>
-      <!-- end testimonials-wrap -->
-    </section>
-    <!-- end s-features -->
+    end s-features -->
 
     <!-- pricing
     ================================================== -->
@@ -492,9 +360,7 @@
             Straight-Forward Pricing.
           </h1>
           <p class="lead">
-            Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae
-            nemo est. Ut quis enim rerum quia assumenda repudiandae non cumque
-            qui. Amet repellat omnis ea.
+            Our pricing is very simple. We set up your website to have free content for anyone to see and premium content for paid members. You decide how much you will like to charge for membership. We recommend a $10/ month fee for users to become members. From those $10, 3.5% goes to credit card fees, and we charge $1.
           </p>
         </div>
       </div>
@@ -556,6 +422,7 @@
         <!-- end item-plan -->
       </div>
       <!-- end plans -->
+      <div id="chartdiv" style="width: 100%; height: 700px; background-color: #FFFFFF;" ></div>
     </section>
     <!-- end s-pricing -->
 
